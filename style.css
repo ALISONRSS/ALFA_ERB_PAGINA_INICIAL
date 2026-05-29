@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(248, 250, 252);
+  color: #a3204c;
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+  background: #111827;
+  color: white;
+  padding: 15px 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* MENU */
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav ul li {
+  position: relative;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.main-nav ul li a:hover {
+  color: #60a5fa;
+}
+
+.main-nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #1f2937;
+  padding: 10px;
+  list-style: none;
+  border-radius: 6px;
+  min-width: 180px;
+  z-index: 100;
+}
+
+.main-nav ul li:hover ul {
+  display: block;
+}
+
+.main-nav ul li ul li {
+  margin-bottom: 8px;
+}
+
+.main-nav ul li ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* CONTATOS */
+
+.header-contacts {
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.social-proof {
+  background: #e5e7eb;
+}
+
+.price-box {
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.price-box h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #111827;
+  font-size: 2rem;
+}
+
+/* CARDS */
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.review {
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+}
+
+.review h3 {
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.review p {
+  margin-bottom: 20px;
+  color: #4b5563;
+}
+
+/* BOTÕES */
+
+.btn {
+  display: inline-block;
+  background: #228cc5;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #16a34a;
+  transform: scale(1.03);
+}
+
+/* FOOTER */
+
+footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-contacts {
+    text-align: center;
+  }
+
+}
